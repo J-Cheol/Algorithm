@@ -7,7 +7,13 @@ class Main {
 		int first = sc.nextInt();
 		int expected = first;
 		boolean flag = true;
+		if (first != 1 && first != 8) {
+			flag = false;
+		}
 		for (int i = 0; i < 7; i++) {
+			if (!flag) {
+				break;
+			}
 			int check = sc.nextInt();
 			if (first == 1) {
 				expected++;
